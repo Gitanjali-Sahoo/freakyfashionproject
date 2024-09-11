@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  body {
+    background: white;
+    /* padding: 20px 20px 0px; */
+  }
+  #header {
+    padding: 20px 20px 0px;
+  }
+  img {
+    width: 100%;
+    height: 300px;
+  }
+  .search-icon {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-top: 10px;
+    align-items: center;
+  }
+  .search-bar {
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 4px;
+    flex: 1;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 35px;
+  }
+  .search-bar input {
+    border: none;
+    width: 100%;
+  }
+  .icon {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+  }
+  #nav ul {
+    list-style: none;
+  }
+  #nav ul a {
+    text-decoration: none;
+    color: #508c9b;
+    font-weight: bold;
+  }
+  #nav ul a:hover {
+    color: #134b70;
+  }
+  main {
+    padding: 20px 20px 0px;
+  }
+  #hero-section {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #134b70;
+  }
+  #hero-section img {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+  }
+  #cards {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .card-container {
+    position: relative;
+  }
+  .badge {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 15px;
+    width: 76px;
+    height: 30px;
+    background: #134b70;
+  }
+  .card-container .bi {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 25px;
+    color: #134b70;
+  }
+  .card-container img {
+    width: 100%;
+  }
+  .card-details {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  .details-container {
+    display: flex;
+    gap: 15px;
+    font-weight: 700;
+    align-items: center;
+  }
+  .details-container .bi {
+    font-size: 30px;
+  }
+  .details-container p {
+    margin-bottom: 0;
+  }
+  .accordion-button {
+    padding: 8px 5px;
+  }
+  .accordion-button::after {
+    content: none;
+  }
+  .accordion-body ul {
+    list-style: none;
+  }
+  .accordion-body ul li {
+    padding: 4px 0;
+  }
+}
