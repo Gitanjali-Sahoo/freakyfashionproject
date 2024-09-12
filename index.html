@@ -16,7 +16,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <!--Custom Style-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!--Header Section-->
@@ -61,18 +61,20 @@
       <!-- Cards section-->
       <section id="cards">
         <div>
-          <div class="card-container">
-            <span class="badge">News</span>
-            <img src="./images/logo3.png" alt="card-image" />
-            <i class="bi bi-heart-fill"></i>
-          </div>
-          <div class="card-details">
-            <div>
-              <h4>Black T-Shirt</h4>
-              <p>Levis</p>
+          <a href="product-details.html"
+            ><div class="card-container">
+              <span class="badge">News</span>
+              <img src="./images/logo3.png" alt="card-image" />
+              <i class="bi bi-heart-fill"></i>
             </div>
-            <h4>199 SEK</h4>
-          </div>
+            <div class="card-details">
+              <div>
+                <h4>Black T-Shirt</h4>
+                <p>Levis</p>
+              </div>
+              <h4>199 SEK</h4>
+            </div></a
+          >
         </div>
         <div>
           <div class="card-container">
@@ -166,6 +168,7 @@
           </div>
         </div>
       </section>
+      <!--Icon sections-->
       <section id="details">
         <div class="details-container">
           <i class="bi bi-globe-europe-africa"></i>
@@ -185,6 +188,7 @@
         </div>
       </section>
     </main>
+    <!--Footer Section-->
     <footer id="products">
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
@@ -223,7 +227,6 @@
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseTwo"
               aria-expanded="false"
-              aria-controls="flush-collapseTwo"
             >
               My Pages
             </button>
@@ -237,27 +240,13 @@
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseThree"
               aria-expanded="false"
-              aria-controls="flush-collapseThree"
             >
               Customer service
             </button>
           </h2>
-          <!-- <div
-            id="flush-collapseThree"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              third item's accordion body. Nothing more exciting happening
-              here in terms of content, but just filling up the space to make
-              it look, at least at first glance, a bit more representative of
-              how this would look in a real-world application.
-            </div>
-          </div> -->
         </div>
       </div>
+      <p>© Freaky Fashion</p>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
