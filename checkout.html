@@ -64,6 +64,43 @@
           </div>
           <h4>398 SEK</h4>
         </div>
+        <div style="margin-top: 10px">
+          <h1 class="checkout-heading">Customer data</h1>
+          <form class="checkout-form" action="">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" class="form-control" />
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" class="form-control" />
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" class="form-control" />
+
+            <fieldset>
+              <legend>Address</legend>
+
+              <label for="street">Street</label>
+              <input
+                type="text"
+                id="street"
+                name="street"
+                class="form-control"
+              />
+
+              <label for="pincode">Pincode</label>
+              <input
+                type="number"
+                id="pincode"
+                name="pincode"
+                class="form-control"
+              />
+
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" class="form-control" />
+            </fieldset>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox">I want to receive newsletters</label>
+            <input type="button" value="Buy" />
+          </form>
+        </div>
       </div>
       <section id="details">
         <div class="details-container">

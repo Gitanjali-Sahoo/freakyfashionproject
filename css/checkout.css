@@ -120,4 +120,30 @@
     border: 2px solid;
     margin-top: 2px;
   }
+  form > input {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+  }
+  form [type="checkbox"] {
+    width: 15px;
+    display: inline;
+  }
+  form [type="button"] {
+    width: 140px;
+    margin: 10px auto;
+    background-color: #134b70;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    font-weight: 700;
+  }
+  fieldset {
+    border: 1px solid;
+    padding: 10px;
+  }
+  fieldset input {
+    margin-top: 10px;
+  }
 }
