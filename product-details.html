@@ -21,20 +21,23 @@
   <body>
     <!--Header Section-->
     <header id="header">
-      <img src="./images/logo1.png" alt="logo" />
-      <div class="search-icon">
-        <div class="search-bar">
-          <i class="bi bi-search"></i>
-          <input
-            type="search"
-            name="search"
-            id="search"
-            placeholder="Search Product....."
-          />
-        </div>
-        <div class="icon">
-          <i class="bi bi-heart-fill"></i>
-          <i class="bi bi-basket-fill"></i>
+      <div class="header-container">
+        <a href="./index.html"><img src="./images/logo1.png" alt="logo" /></a>
+
+        <div class="search-icon">
+          <div class="search-bar">
+            <i class="bi bi-search"></i>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search Product....."
+            />
+          </div>
+          <div class="icon">
+            <i class="bi bi-heart-fill"></i>
+            <i class="bi bi-basket-fill"></i>
+          </div>
         </div>
       </div>
       <nav id="nav">
@@ -49,7 +52,7 @@
     </header>
     <main>
       <section id="cards">
-        <div>
+        <div class="flex-container">
           <div class="card-container">
             <img src="./images/logo3.png" alt="card-image" />
             <i class="bi bi-suit-heart"></i>
@@ -63,10 +66,11 @@
               vero, natus reiciendis beatae sunt asperiores excepturi amet
               culpa. Molestiae, error delectus.
             </p>
-            <p>199 SEK</p>
+            <p style="font-weight: bold">199 SEK</p>
             <button class="cart-btn" type="button">Add to Cart</button>
           </div>
         </div>
+
         <!--Icon sections-->
       </section>
       <section id="details">
@@ -121,16 +125,55 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button">My Pages</button>
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+            >
+              My Pages
+            </button>
           </h2>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+            >
               Customer service
             </button>
           </h2>
         </div>
+      </div>
+      <div class="service">
+        <table>
+          <tr>
+            <th>Shopping</th>
+            <th>My Pages</th>
+            <th>Customer service</th>
+          </tr>
+          <tr>
+            <td>Winter jackets</td>
+            <td>My Orders</td>
+            <td>Return Policy</td>
+          </tr>
+          <tr>
+            <td>Puffer jackets</td>
+            <td>My Account</td>
+            <td>Privacy Policy</td>
+          </tr>
+          <tr>
+            <td>Trench coats</td>
+          </tr>
+          <tr>
+            <td>Coat</td>
+          </tr>
+        </table>
       </div>
       <p>© Freaky Fashion</p>
     </footer>
