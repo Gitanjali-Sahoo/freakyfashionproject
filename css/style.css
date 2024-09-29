@@ -67,6 +67,7 @@ input:focus-visible {
 }
 .card-container {
   position: relative;
+  border: 2px solid #134b70;
 }
 .badge {
   position: absolute;
@@ -93,10 +94,10 @@ input:focus-visible {
   padding-top: 10px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
   .header-container img {
     width: 100%;
-    height: 100px;
+    height: 200px;
   }
   .search-bar {
     flex: 1;
@@ -114,19 +115,11 @@ input:focus-visible {
   }
   /* Card Section */
   #cards {
-    /* display: flex;
-    flex-direction: column;
-    gap: 22px; */
     padding-top: 20px;
     display: grid;
     grid-template-columns: 1fr;
   }
 
-  /* .card-details {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-  } */
   .details-container {
     display: flex;
     gap: 15px;
@@ -161,9 +154,7 @@ input:focus-visible {
     margin-top: 10px;
   }
   .accordion {
-    /* --bs-accordion-active-bg: none; */
     --bs-accordion-btn-focus-box-shadow: none;
-    /* --bs-accordion-bg: none; */
   }
   .accordion-item {
     border: none;
@@ -176,7 +167,6 @@ input:focus-visible {
   }
 }
 
-/* Tablet screen*/
 @media (min-width: 640px) {
   .header-container {
     display: flex;
@@ -270,12 +260,15 @@ input:focus-visible {
   .spots-container {
     position: relative;
   }
-  .spots-container h5 {
+  .spots-container img {
+    width: 100%;
+  }
+  .spots-container p {
     position: absolute;
-    left: 505;
     bottom: 50%;
-    transform: translate(-50% -50%);
     color: white;
+    margin-bottom: 0;
+    text-align: center;
   }
   #spots a {
     width: 30%;

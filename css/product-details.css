@@ -64,6 +64,7 @@ input:focus-visible {
 }
 .card-container {
   position: relative;
+  border: 1px solid;
 }
 .card-container .bi {
   position: absolute;
@@ -78,6 +79,84 @@ input:focus-visible {
 .card-details {
   padding-top: 10px;
 }
+
+#image-slider {
+  margin-top: 40px;
+  width: 100%;
+}
+#image-slider h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.slider {
+  width: 100%;
+  /* width: 900px; */
+  /* Width for 3 images (300px each) */
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  width: 300px; /* Width of each image */
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Navigation arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border: none;
+  font-size: 18px;
+  border-radius: 50%; /* Circular buttons */
+  transition: background-color 0.3s;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Slide positioning based on radio button selection */
+#slide1:checked ~ .slides {
+  transform: translateX(0); /* Show images 1-3 */
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-300px); /* Show images 2-4 */
+}
+
 @media (max-width: 640px) {
   body {
     background: white;
@@ -151,6 +230,9 @@ input:focus-visible {
   .service {
     display: none;
   }
+  #image-slider {
+    display: none;
+  }
 }
 /* media queries for tablet */
 
@@ -178,13 +260,14 @@ input:focus-visible {
   .flex-container {
     display: flex;
     gap: 20px;
+    align-items: center;
   }
   .card-container {
     flex: 80%;
   }
   .card-container img {
     width: 100%;
-    height: 400px;
+    height: 500px;
   }
   .card-container .bi {
     display: none;
@@ -207,9 +290,6 @@ input:focus-visible {
   footer {
     background-color: #80808040;
     border: 1px solid;
-    /* position: fixed;
-    bottom: 0;
-    width: 100%; */
   }
   footer p {
     text-align: center;
@@ -236,9 +316,15 @@ input:focus-visible {
   th {
     padding: 10px 0px 10px 20px;
   }
+  .slide {
+    width: 170px;
+  }
 }
 @media (min-width: 1024px) {
   #details {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .slide {
+    width: 350px;
   }
 }
